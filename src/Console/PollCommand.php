@@ -76,12 +76,12 @@ class PollCommand extends Command
             return;
         }
 
-        [$exitCode, $output] = $this->run($name);
+        [$exitCode, $output] = $this->runArtisan($name);
         $this->report($hub, $id, $exitCode, $output);
     }
 
     /** @return array{0:int,1:string} */
-    protected function run(string $name): array
+    protected function runArtisan(string $name): array
     {
         try {
             $process = Process::fromShellCommandline(
