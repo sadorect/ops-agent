@@ -1,0 +1,32 @@
+{
+    "name": "sadorect/ops-agent",
+    "description": "Agent that reports health, metrics, logs and errors to the Sadorect Ops hub and executes allow-listed remote commands.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "monitoring", "ops", "agent"],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/console": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "monolog/monolog": "^3.0",
+        "symfony/process": "^6.0|^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sadorect\\OpsAgent\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sadorect\\OpsAgent\\OpsAgentServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
