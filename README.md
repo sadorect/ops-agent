@@ -4,6 +4,9 @@ The agent half of the [Sadorect Ops](../../README.md) control plane. Drop it int
 Laravel 11/12 app to report health, metrics, logs and errors to the hub, and to execute
 **allow-listed** remote commands the hub dispatches.
 
+> **Canonical repo:** https://github.com/sadorect/ops-agent — published automatically from
+> the hub monorepo's `packages/ops-agent` via git subtree.
+
 > This package lives here for development alongside the hub. In production it is published
 > as a standalone Composer package and required into each managed app.
 
