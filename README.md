@@ -9,8 +9,11 @@ Laravel 11/12 app to report health, metrics, logs and errors to the hub, and to 
 
 ## Install
 
+Published as a Git VCS repo. In the managed app:
+
 ```bash
-composer require sadorect/ops-agent
+composer config repositories.ops-agent vcs https://github.com/sadorect/ops-agent
+composer require sadorect/ops-agent:dev-main
 php artisan vendor:publish --tag=ops-agent-config
 ```
 
